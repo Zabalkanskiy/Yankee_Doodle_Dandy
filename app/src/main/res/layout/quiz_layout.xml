@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/quiz_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/history_qeez" />
+
+    <TextView
+        android:id="@+id/quiz_question_id"
+        android:layout_width="140dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/protest_riot_regular"
+        android:gravity="center"
+        android:text="1/15"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/quiz_card_view"
+        android:layout_width="280dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quiz_question_id">
+
+        <ImageView
+            android:id="@+id/quiz_image_view"
+            android:layout_width="280dp"
+            android:layout_height="190dp"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/john_jay_1" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/quiz_question_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/protest_riot_regular"
+        android:gravity="center"
+        android:background="@drawable/black_button_shape"
+        android:text="In which American city was the world’s first domed air-conditioned indoor stadium built?"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quiz_card_view" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/quiz_first_button"
+        android:layout_width="277dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/black_button_shape"
+        android:fontFamily="@font/protest_riot_regular"
+        android:text="2000"
+        android:textColor="#FFFFFF"
+
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quiz_question_text" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/quiz_second_button"
+        android:layout_width="277dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/black_button_shape"
+        android:fontFamily="@font/protest_riot_regular"
+        android:text="2000"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quiz_first_button" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/quiz_third_button"
+        android:layout_width="277dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/black_button_shape"
+        android:fontFamily="@font/protest_riot_regular"
+        android:text="2000"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quiz_second_button" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/quiz_four_button"
+        android:layout_width="277dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/black_button_shape"
+        android:fontFamily="@font/protest_riot_regular"
+        android:text="2000"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quiz_third_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
